@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+  </head>
+  <body>
+    <div class="con" id="demoObject">
+      <h2>Password Generator</h2>
+
+      <input type="text" class="red" id="inputScreen" />
+      <span class="material-symbols-outlined" id="copy"> content_copy </span>
+      <input type="range" max="23" min="8" value="8" class="rem" id="main" />
+      <div class="rent">
+        <p>Password Length</p>
+        <span id="slider"></span>
+      </div>
+      <div class="rent">
+        <label for="lowercase">Include Lowercase (a-z)</label>
+        <input type="checkbox" id="lowercase" />
+      </div>
+      <div class="rent">
+        <label for="uppercase">Include Uppercase (A-Z)</label>
+        <input type="checkbox" id="uppercase" />
+      </div>
+      <div class="rent">
+        <label for="number">Include Number (1-9)</label>
+        <input type="checkbox" id="number" />
+      </div>
+      <div class="rent">
+        <label for="symbol">Include Symbols (@-$)</label>
+        <input type="checkbox" id="symbol" />
+      </div>
+      <button id="btns">Generate Password</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
